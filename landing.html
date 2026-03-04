@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noize | Ropa Urbana</title>
+
+<link rel="stylesheet" href="./css/landing.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="logo">
+<img src="./images/Diseño sin título.png" alt="Logo Noize">
+</div>
+
+<nav class="nav">
+<a href="#">News</a>
+<a href="./productos/productos.html">Productos</a>
+<a href="./nosotros/nosotros.html">Nosotros</a>
+<a href="./contactanos/contactanos.html">Contáctanos</a>
+</nav>
+
+<div class="icons">
+<i class="fa-regular fa-magnifying-glass"></i>
+<i class="fa-regular fa-user"></i>
+<i class="fa-regular fa-cart-shopping"></i>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+<h1>NUEVA COLECCIÓN</h1>
+<p>Estilo urbano para las calles. Diseños únicos que definen tu personalidad.</p>
+
+<!-- 🔥 BOTÓN CON ID -->
+<button id="openModal">EXPLORAR AHORA →</button>
+</div>
+</section>
+
+
+<!-- 🔥 MODAL NOIZE -->
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<span class="close-modal" id="closeModal">
+<i class="fa-solid fa-xmark"></i>
+</span>
+
+<h2>NUEVA IMAGEN NOIZE</h2>
+
+<p>
+Noize evoluciona. Hemos renovado nuestra identidad visual para reflejar una nueva
+etapa más urbana, más auténtica y conectada con la comunidad.
+</p>
+
+<div class="modal-gallery">
+<img src="./images/Captura de pantalla 2026-02-05 a las 12.01.20.png">
+<img src="./images/Captura de pantalla 2026-02-05 a las 12.06.56.png">
+<img src="./images/Captura de pantalla 2026-02-05 a las 12.19.14.png">
+<img src="./images/Captura de pantalla 2026-02-02 a las 22.26.22.png">
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SECCIÓN 1 -->
+<section class="split-section">
+<div class="split-image"
+style="background-image: url('./images/Captura\ de\ pantalla\ 2026-02-02\ a\ las\ 19.15.44.png');">
+</div>
+<div class="split-text">
+<h2>CREAMOS IDENTIDAD</h2>
+<p>Diseñamos prendas que representan una forma de vivir la calle, la música y la cultura urbana.</p>
+</div>
+</section>
+
+<!-- SECCIÓN 2 -->
+<section class="split-section reverse">
+<div class="split-image"
+style="background-image: url('./images/Captura\ de\ pantalla\ 2026-02-03\ a\ las\ 15.43.04.png');">
+</div>
+<div class="split-text">
+<h2>MODA CON ACTITUD</h2>
+<p>No seguimos tendencias, las reinterpretamos desde nuestra propia visión creativa.</p>
+</div>
+</section>
+
+<!-- SECCIÓN 3 -->
+<section class="split-section">
+<div class="split-image"
+style="background-image: url('./images/Captura de pantalla 2026-02-02 a las 22.26.22.png');">
+</div>
+<div class="split-text">
+<h2>CALLE Y COMUNIDAD</h2>
+<p>Noize es más que ropa: es comunidad, expresión y autenticidad.</p>
+</div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-col">
+      <h3>Noize</h3>
+      <p>
+        Moda urbana que define tu estilo.<br>
+        Diseños únicos para personas auténticas.
+      </p>
+
+      <div class="footer-social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>COMPRAR</h3>
+      <ul>
+        <li><a href="#">Nuevos Arrivals</a></li>
+        <li><a href="#">Camisetas</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Colecciones</a></li>
+        <li><a href="#">Edición Limitada</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>AYUDA</h3>
+      <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Envíos</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Guía de tallas</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>NEWSLETTER</h3>
+      <p>Suscríbete y recibe las últimas novedades</p>
+
+      <form class="footer-newsletter">
+        <input type="email" placeholder="Tu email">
+        <button type="submit">
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Noize. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- 🔥 SCRIPT MODAL -->
+<script>
+
+const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+
+openBtn.onclick = () => {
+modal.classList.add("active");
+}
+
+closeBtn.onclick = () => {
+modal.classList.remove("active");
+}
+
+window.onclick = (e) => {
+if(e.target === modal){
+modal.classList.remove("active");
+}
+}
+
+</script>
+
+</body>
+</html>
